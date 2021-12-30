@@ -6,8 +6,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 - [Overview](#overview)
   - NET preview card component challenge solution
-  - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - HTML & CSS
   - justify-content: spance-between property of flexbox works only after specifying the width of the flex container.  
