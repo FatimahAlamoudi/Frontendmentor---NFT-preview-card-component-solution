@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --background-color: hsl(217, 54%, 11%);
+    --card-background-color: hsl(216, 50%, 16%);
+    --white: hsl(0, 0%, 100%);
+    --line-color: hsl(215, 32%, 27%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--background-color);
+}
+
+
+
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 60vh;
+    width: 18vw;
+    background-color: var(--card-background-color);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em;
+    max-height: 70vh;
+}
+
+
+
+.pic{
+    background-image: url('images/image-equilibrium.jpg');
+    height: 30vh;
+    width: 16vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: .2em;
+    min-height: 30vh;
+}
+
+.pic:hover{
+    background-color: var(--cyan);
+    background-image:  url('images/icon-view.svg');
+    background-size: 15%;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+.paragraph{
+    font-size: 15px;
+    color: var(--white);
+    align-self: flex-start;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.paragraph:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.desc{
+    color: var(--soft-blue);
+    align-self: flex-start;
+    font-size: 11px;
+    line-height: 1.5em;
+    margin-top: 1em;
+}
+
+.pricing{
+    display: flex;
+    margin-top: 1em;
+    font-size: 10px;
+    justify-content: space-between;
+    width: 16vw;
+}
+
+.pricing #price{
+    color: var(--cyan);
+    font-weight: bold;
+}
+
+.pricing #time{
+    color: var(--white);
+}
+
+hr{
+    margin-top: 1em;
+    width: 100%;
+}
+
+.person{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1em;
+    width: 16em;
+    align-items:center;
+    margin-left: 4em;
+}
+
+.profile{
+    background-image: url('images/image-avatar.png');
+    background-size: cover;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--white);
+    margin-right: .5em;
+
+}
+
+.person p{
+    color: var(--soft-blue);
+    font-size: 12px;
+}
+
+.person p span{
+    color: var(--white);
+}
+
+.person p span:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+
+
